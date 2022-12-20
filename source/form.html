@@ -52,7 +52,7 @@
       <section class="review">
         <div class="review__intro">
           <h2 class="review__intro-title page-title">Оставьте свой отзыв</h2>
-          <p class="review__intro-description page-description">Помогите нашим отелям стать лучше! Оставвьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="review__intro-description page-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review-form" action="" method="post">
           <fieldset class="review-form__block form-block">
@@ -102,6 +102,33 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="review-form__block form-block">
+            <legend class="form-block__title">Посещенные достопримечательности:</legend>
+            <ul class="form-block__attraction-list">
+              <li  class="form-block__attraction-item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" id="bridge" name="rating" checked>
+                <label class="checkbox__label" for="bridge">Мост дьявола</label>
+              </li>
+              <li  class="form-block__attraction-item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" id="mount" name="rating" checked>
+                <label class="checkbox__label" for="mount">Гора-Колокол</label>
+              </li>
+              <li  class="form-block__attraction-item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" id="slide-park" name="slide-park" checked>
+                <label class="checkbox__label" for="slide-park">Слайд-парк</label>
+              </li>
+              <li  class="form-block__attraction-item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" id="red-rocks" name="red-rocks">
+                <label class="checkbox__label" for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="review-form__block form-block">
+            <legend class="form-block__title">Опишите свои эмоции:</legend>
+            <input class="input-text__text" type="text" value="Опишите подробно все свои восторги">
+          </fieldset>
+          <button class="review-form__button button" type="submit">Отправить отзыв</button>
+          <span class="review-form__prompt">* — Обязательные поля</span>
         </form>
       </section>
     </main>

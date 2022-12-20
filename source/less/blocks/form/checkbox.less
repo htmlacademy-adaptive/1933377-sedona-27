@@ -1,4 +1,4 @@
-.radio__label {
+.checkbox__label {
   position: relative;
   font-weight: 700;
   font-size: 18px;
@@ -18,22 +18,21 @@
     left: 0;
     top: 0;
     background-color: #f2f2f2;
-    border-radius: 50%;
+    border-radius: 4px;
   }
 
   &::after {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 22px;
+    height: 16px;
     position: absolute;
-    left: 15px;
+    left: 12px;
     top: 15px;
-    background-color: #333333;
-    border-radius: 50%;
+    background-image: url("../img/tick.svg");
     display: none;
   }
 }
 
-.radio__input:checked + .radio__label::after {
+.checkbox__input:checked + .checkbox__label::after {
   display: block;
 }
