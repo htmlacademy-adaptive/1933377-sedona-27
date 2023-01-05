@@ -1,7 +1,7 @@
 .review-form__block {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: 0;
 
   &:not(:last-of-type)::before {
@@ -13,6 +13,14 @@
     left: 0;
     bottom: 0;
     background-color: #e5e5e5;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
   }
 }
 
