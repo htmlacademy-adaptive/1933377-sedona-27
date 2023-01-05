@@ -14,21 +14,72 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: #eeeeee;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .advantages__item {
   background-color: #eeeeee;
-  padding: 24px 26px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.advantages__item--large {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.advantages__item--dark {
+  background-color: @base-color;
+  color: #ffffff;
+}
+
+.advantages__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.advantages__text-container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 52px 33px;
+  }
+}
+
+.advantages__item--large .advantages__text-container {
+  @media (min-width: @tablet-width) {
+    width: 33.3%;
+  }
 }
 
 .advantages__title {
   margin: 0;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
-  padding-bottom: 11px;
+  margin-bottom: 11px;
 }
 
 .advantages__number {
@@ -38,7 +89,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  padding-bottom: 17px;
+  margin-bottom: 25px;
 }
 
 .advantages__description {
@@ -48,36 +99,29 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  padding-bottom: 40px;
 }
 
-.advantages__item--large {
-  background-color: @base-color;
-  padding: 0;
-}
-
-.advantages__text {
-  padding: 37px 18px;
-}
-
-.advantages__text .advantages__title,
-.advantages__text .advantages__number,
-.advantages__text .advantages__description {
+.advantages__item--dark .advantages__title,
+.advantages__item--dark .advantages__description,
+.advantages__item--dark .advantages__number {
   color: #ffffff;
-}
-
-.advantages__details-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin-bottom: 44px;
-}
-
-.advantages__details-item {
-  background-color: #ffffff;
-  text-align: left;
-  padding: 23px 18px 2px 65px;
 }
 
 .advantages__photo {
   display: block;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 256px;
+  }
+}
+
+.advantages__photo-container {
+  @media (min-width: @tablet-width) {
+    width: 66.6%;
+    overflow: hidden;
+  }
 }

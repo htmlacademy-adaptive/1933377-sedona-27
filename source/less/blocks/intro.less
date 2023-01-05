@@ -6,6 +6,14 @@
   background-repeat: no-repeat;
   padding: 90px 15px 85px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/intro-background-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro-background-desktop.jpg");
+  }
 }
 
 .intro::before {
@@ -18,10 +26,18 @@
   background-position: center;
   width: 100%;
   height: 57px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/intro-triangle-desktop.svg");
+  }
 }
 
 .intro--inner {
   background-image: url("../img/catalog/catalog-intro-background.jpg");
   padding: 52px 15px 63px;
-}
 
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/catalog-intro-background-tablet.jpg");
+    padding: 96px 15px 117px;
+  }
+}

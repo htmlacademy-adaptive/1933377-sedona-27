@@ -7,6 +7,10 @@
   padding-top: 24px;
 }
 
+.form-block__list {
+  text-align: left;
+}
+
 .form-block__name-list {
   margin: 0;
   padding: 0;
@@ -26,6 +30,15 @@
   padding: 0;
   list-style-type: none;
   padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .form-block__rating-item:not(:last-child) {
@@ -37,8 +50,24 @@
   padding: 0;
   list-style-type: none;
   padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .form-block__attraction-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.form-block__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }

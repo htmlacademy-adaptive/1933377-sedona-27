@@ -20,7 +20,7 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
                 Главная
               </a>
@@ -30,7 +30,7 @@
                 Фото и видео
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--current">
               <a class="main-nav__link">
                 Форма отзыва
               </a>
@@ -55,9 +55,10 @@
           <p class="review__intro-description page-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review-form" action="" method="post">
+          <div class="form-block__wrapper">
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Представьтесь:</legend>
-            <ul class="form-block__name-list">
+            <ul class="form-block__name-list form-block__list">
               <li  class="form-block__name-item input-text">
                 <label class="input-text__label">Имя*:</label>
                 <input class="input-text__input" type="text">
@@ -74,7 +75,7 @@
           </fieldset>
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Контактная информация:</legend>
-            <ul class="form-block__contacts-list">
+            <ul class="form-block__contacts-list form-block__list">
               <li  class="form-block__contacts-item input-text input-text--with-icon">
                 <label class="input-text__label">Контактный телефон*:</label>
                 <input class="input-text__input" type="phone">
@@ -85,9 +86,10 @@
               </li>
             </ul>
           </fieldset>
+        </div>
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Ваше общее впечатление:</legend>
-            <ul class="form-block__rating-list">
+            <ul class="form-block__rating-list form-block__list">
               <li  class="form-block__rating-item radio">
                 <input class="visually-hidden radio__input" type="radio" id="good" name="rating" value="good" checked>
                 <label class="radio__label" for="good">Скорее положительное</label>
@@ -104,7 +106,7 @@
           </fieldset>
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Посещенные достопримечательности:</legend>
-            <ul class="form-block__attraction-list">
+            <ul class="form-block__attraction-list form-block__list">
               <li  class="form-block__attraction-item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" id="bridge" name="rating" checked>
                 <label class="checkbox__label" for="bridge">Мост дьявола</label>
@@ -127,8 +129,10 @@
             <legend class="form-block__title">Опишите свои эмоции:</legend>
             <input class="input-text__text" type="text" value="Опишите подробно все свои восторги">
           </fieldset>
-          <button class="review-form__button button" type="submit">Отправить отзыв</button>
-          <span class="review-form__prompt">* — Обязательные поля</span>
+          <div class="review-form__end">
+            <button class="review-form__button button" type="submit">Отправить отзыв</button>
+            <span class="review-form__prompt">* — Обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>
