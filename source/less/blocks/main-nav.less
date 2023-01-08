@@ -32,7 +32,6 @@
 .main-nav--closed .main-nav__toggle {
   background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
-
 }
 
 @media (max-width: @mobile-width-only) {
@@ -98,36 +97,18 @@
   }
 }
 
-.main-nav__item {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  min-height: 55px;
-  background-color: @base-color;
-  border-bottom: 1px solid #678fa8;
-  border-top: 1px solid  #9ac2db;
-
-  @media (min-width: @tablet-width) {
-    font-size: 14px;
-    line-height: 21px;
-    background-color: #ffffff;
-    border: none;
-  }
-}
-
 .main-nav__item:nth-child(3) {
   @media (min-width: @tablet-width) {
     grid-column: 4/5;
   }
 }
 
-.main-nav__item:last-child {
-  border-bottom: none;
+.main-nav__item:last-child .main-nav__link {
+  border-bottom: 1px solid transparent;
 }
 
-.main-nav__item:first-child {
-  border-top: none;
+.main-nav__item:first-child .main-nav__link {
+  border-top: 1px solid transparent;
 }
 
 .main-nav__link {
@@ -135,14 +116,38 @@
   color: #ffffff;
   display: block;
   padding: 17px 20px 12px;
+  background-color: @base-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  min-height: 56px;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid  #9ac2db;
 
   @media (min-width: @tablet-width) {
     color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: #ffffff;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
   }
 }
 
 .main-nav__item--current a {
   @media (min-width: @tablet-width) {
     color: #766357;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav__link:hover {
+    background-color: #669ec0;
+  }
+
+  .main-nav__link:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3)
   }
 }

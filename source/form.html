@@ -61,15 +61,15 @@
             <ul class="form-block__name-list form-block__list">
               <li  class="form-block__name-item input-text">
                 <label class="input-text__label">Имя*:</label>
-                <input class="input-text__input" type="text">
+                <input class="input-text__input" type="text" placeholder="Пётр">
               </li>
               <li  class="form-block__name-item input-text">
                 <label class="input-text__label">Фамилия*:</label>
-                <input class="input-text__input" type="text">
+                <input class="input-text__input" type="text" placeholder="Пустота">
               </li>
               <li  class="form-block__name-item input-text">
                 <label class="input-text__label">Отчество:</label>
-                <input class="input-text__input" type="text">
+                <input class="input-text__input" type="text" placeholder="Викторович">
               </li>
             </ul>
           </fieldset>
@@ -78,11 +78,11 @@
             <ul class="form-block__contacts-list form-block__list">
               <li  class="form-block__contacts-item input-text input-text--with-icon">
                 <label class="input-text__label">Контактный телефон*:</label>
-                <input class="input-text__input" type="phone">
+                <input class="input-text__input" type="phone"  placeholder="Введите телефон">
               </li>
               <li  class="form-block__contacts-item input-text input-text--with-icon">
                 <label class="input-text__label">Электронная почта*:</label>
-                <input class="input-text__input" type="email">
+                <input class="input-text__input" type="email"  placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
@@ -127,7 +127,7 @@
           </fieldset>
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Опишите свои эмоции:</legend>
-            <input class="input-text__text" type="text" value="Опишите подробно все свои восторги">
+            <textarea class="textarea__text" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review-form__end">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
@@ -142,26 +142,31 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-                Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="#000000" viewBox="0 0 27 35">
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="copyright__wrapper">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35">
               <path
                 d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
             </svg>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </footer>
   </div>
