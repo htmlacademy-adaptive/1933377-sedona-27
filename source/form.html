@@ -52,53 +52,60 @@
       <section class="review">
         <div class="review__intro">
           <h2 class="review__intro-title page-title">Оставьте свой отзыв</h2>
-          <p class="review__intro-description page-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="review__intro-description page-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
+            а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review-form" action="" method="post">
           <div class="form-block__wrapper">
-          <fieldset class="review-form__block form-block">
-            <legend class="form-block__title">Представьтесь:</legend>
-            <ul class="form-block__name-list form-block__list">
-              <li  class="form-block__name-item input-text">
-                <label class="input-text__label">Имя*:</label>
-                <input class="input-text__input" type="text" placeholder="Пётр">
-              </li>
-              <li  class="form-block__name-item input-text">
-                <label class="input-text__label">Фамилия*:</label>
-                <input class="input-text__input" type="text" placeholder="Пустота">
-              </li>
-              <li  class="form-block__name-item input-text">
-                <label class="input-text__label">Отчество:</label>
-                <input class="input-text__input" type="text" placeholder="Викторович">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review-form__block form-block">
-            <legend class="form-block__title">Контактная информация:</legend>
-            <ul class="form-block__contacts-list form-block__list">
-              <li  class="form-block__contacts-item input-text input-text--with-icon">
-                <label class="input-text__label">Контактный телефон*:</label>
-                <input class="input-text__input" type="phone"  placeholder="Введите телефон">
-              </li>
-              <li  class="form-block__contacts-item input-text input-text--with-icon">
-                <label class="input-text__label">Электронная почта*:</label>
-                <input class="input-text__input" type="email"  placeholder="Введите e-mail">
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+            <fieldset class="review-form__block form-block">
+              <legend class="form-block__title">Представьтесь:</legend>
+              <ul class="form-block__name-list form-block__list">
+                <li class="form-block__name-item input-text">
+                  <label class="input-text__label">Имя*:</label>
+                  <input class="input-text__input" type="text" placeholder="Пётр">
+                </li>
+                <li class="form-block__name-item input-text">
+                  <label class="input-text__label">Фамилия*:</label>
+                  <input class="input-text__input" type="text" placeholder="Пустота">
+                </li>
+                <li class="form-block__name-item input-text">
+                  <label class="input-text__label">Отчество:</label>
+                  <input class="input-text__input" type="text" placeholder="Викторович">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="review-form__block form-block">
+              <legend class="form-block__title">Контактная информация:</legend>
+              <ul class="form-block__contacts-list form-block__list">
+                <li class="form-block__contacts-item input-text">
+                  <label class="input-text__label">Контактный телефон*:</label>
+                  <div class="input-text__input--with-icon">
+                    <input class="input-text__input" type="phone" placeholder="Введите телефон">
+                    <span class="input-text__icon input-text__icon--phone"></span>
+                  </div>
+                </li>
+                <li class="form-block__contacts-item input-text">
+                  <label class="input-text__label">Электронная почта*:</label>
+                  <div class="input-text__input--with-icon">
+                    <input class="input-text__input" type="email" placeholder="Введите e-mail">
+                    <span class="input-text__icon input-text__icon--email"></span>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Ваше общее впечатление:</legend>
             <ul class="form-block__rating-list form-block__list">
-              <li  class="form-block__rating-item radio">
+              <li class="form-block__rating-item radio">
                 <input class="visually-hidden radio__input" type="radio" id="good" name="rating" value="good" checked>
                 <label class="radio__label" for="good">Скорее положительное</label>
               </li>
-              <li  class="form-block__rating-item radio">
+              <li class="form-block__rating-item radio">
                 <input class="visually-hidden radio__input" type="radio" id="bad" name="rating" value="bad">
                 <label class="radio__label" for="bad">Скорее отрицательное</label>
               </li>
-              <li  class="form-block__rating-item radio">
+              <li class="form-block__rating-item radio">
                 <input class="visually-hidden radio__input" type="radio" id="dntknow" name="rating" value="dont know">
                 <label class="radio__label" for="dntknow">Затрудняюсь ответить</label>
               </li>
@@ -107,19 +114,20 @@
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Посещенные достопримечательности:</legend>
             <ul class="form-block__attraction-list form-block__list">
-              <li  class="form-block__attraction-item checkbox">
+              <li class="form-block__attraction-item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" id="bridge" name="rating" checked>
                 <label class="checkbox__label" for="bridge">Мост дьявола</label>
               </li>
-              <li  class="form-block__attraction-item checkbox">
+              <li class="form-block__attraction-item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" id="mount" name="rating" checked>
                 <label class="checkbox__label" for="mount">Гора-Колокол</label>
               </li>
-              <li  class="form-block__attraction-item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" id="slide-park" name="slide-park" checked>
+              <li class="form-block__attraction-item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" id="slide-park" name="slide-park"
+                  checked>
                 <label class="checkbox__label" for="slide-park">Слайд-парк</label>
               </li>
-              <li  class="form-block__attraction-item checkbox">
+              <li class="form-block__attraction-item checkbox">
                 <input class="visually-hidden checkbox__input" type="checkbox" id="red-rocks" name="red-rocks">
                 <label class="checkbox__label" for="red-rocks">Красные скалы</label>
               </li>
@@ -129,7 +137,7 @@
             <legend class="form-block__title">Опишите свои эмоции:</legend>
             <textarea class="textarea__text" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <div class="review-form__end">
+          <div class="review-form__block review-form__end">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
             <span class="review-form__prompt">* — Обязательные поля</span>
           </div>
