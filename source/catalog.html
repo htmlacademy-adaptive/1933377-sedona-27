@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - фотографии</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -59,7 +63,11 @@
           <h2 class="visually-hidden">Фото Седоны</h2>
           <ul class="photos__list">
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-1-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Фото просторов.">
+              </picture>
               <div class="photos__text-wrapper">
                 <div class="photos__text">
                 <h3 class="photos__title">Неродные просторы</h3>
@@ -69,7 +77,11 @@
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-2-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Фото растений.">
+              </picture>
               <div class="photos__text-wrapper">
               <div class="photos__text">
                 <h3 class="photos__title">Местная растительность</h3>
@@ -78,7 +90,11 @@
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-3-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Фото дороги.">
+              </picture>
               <div class="photos__text-wrapper">
               <div class="photos__text">
                 <h3 class="photos__title">Дорога на север</h3>
@@ -87,7 +103,11 @@
               </div>
             </li>
             <li class="photos__item">
-              <img class="photos__image" src="img/catalog/photo-4-mobile.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-4-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Фото скал.">
+              </picture>
               <div class="photos__text-wrapper">
               <div class="photos__text">
                 <h3 class="photos__title">Мост дьявола</h3>

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -69,7 +73,11 @@
                 <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="advantages__photo-container">
-                <img class="advantages__photo" src="img/advantages-nice-city.jpg" alt="Привлекательный городок.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages-nice-city-desktop.jpg 1x, img/advantages-nice-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages-nice-city-tablet.jpg 1x, img/advantages-nice-city-tablet@2x.jpg 2x">
+                  <img class="advantages__photo" src="img/advantages-nice-city.jpg" width="260" height="320" srcset="img/advantages-nice-city@2x.jpg 2x" alt="Привлекательный городок.">
+                </picture>
               </div>
             </div>
             <ul class="features">
@@ -100,7 +108,11 @@
           <li class="advantages__item advantages__item--large advantages__item--dark">
             <div class="advantages__wrapper">
               <div class="advantages__photo-container">
-                <img class="advantages__photo" src="img/advantages-rocks-view.jpg" alt="Скалы.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages-rocks-view-desktop.jpg 1x, img/advantages-rocks-view-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages-rocks-view-tablet.jpg 1x, img/advantages-rocks-view-tablet@2x.jpg 2x">
+                  <img class="advantages__photo" src="img/advantages-rocks-view.jpg" width="260" height="320" srcset="img/advantages-rocks-view@2x.jpg 2x" alt="Скалы.">
+                </picture>
               </div>
               <div class="advantages__text-container">
                 <h3 class="advantages__title">Там есть мост дьявола</h3>
