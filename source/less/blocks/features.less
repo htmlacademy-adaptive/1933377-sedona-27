@@ -9,18 +9,20 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-}
+  }
 }
 
 .features__text-container {
-  padding-left: 65px;
+  position: relative;
+  padding: 31px 14px 0 65px;
+
   @media (min-width: @tablet-width) {
-    padding-left: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 102px 30px 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,10 +30,37 @@
   }
 }
 
+.features__text-container::before {
+  position: absolute;
+  top: 25px;
+  left: 14px;
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.features__text-container--house::before {
+  content: url("../img/icon-house.svg");
+}
+
+.features__text-container--food::before {
+  content: url("../img/icon-burger.svg");
+}
+
+.features__text-container--gifts::before {
+  content: url("../img/icon-gift.svg");
+
+  @media (max-width: @mobile-width-only) {
+    left: 18px;
+  }
+}
+
 .features__title {
   margin: 0;
   margin-bottom: 15px;
-  padding-top: 31px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -42,8 +71,7 @@
   @media (min-width: @tablet-width) {
     text-align: center;
     margin-right: 0;
-    padding-top: 155px;
-}
+  }
 }
 
 .features__description {
@@ -54,19 +82,19 @@
   text-transform: uppercase;
   color: #333333;
   text-align: start;
-  width: 237px;
 
   @media (min-width: @tablet-width) {
     text-align: center;
-    padding-bottom: 60px;
-    width: 157px;
-}
+    max-width: 157px;
+  }
 }
 
-.features__description:last-child {
-  padding-bottom: 46px;
+.features__item:last-child .features__description {
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 46px;
+  }
 
   @media (min-width: @tablet-width) {
-    width: 170px;
-}
+    max-width: 170px;
+  }
 }

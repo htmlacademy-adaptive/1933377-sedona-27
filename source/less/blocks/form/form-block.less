@@ -1,10 +1,46 @@
 .form-block__title {
+  position: relative;
   padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  padding-top: 24px;
+  margin-top: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+  }
+
+  &::before {
+    content: "";
+    width: 1000%;
+    height: 1px;
+    position: absolute;
+    display: block;
+    right: -100%;
+    top: -4px;
+    background-color: #e5e5e5;
+
+    @media (min-width: @tablet-width) {
+      right: calc(100% + 87px);
+      top: 50%;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      width: 1000%;
+      height: 1px;
+      position: absolute;
+      display: block;
+      background-color: #e5e5e5;
+      left: calc(100% + 87px);
+      top: 50%;
+    }
+  }
 }
 
 .form-block__list {
@@ -15,7 +51,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-bottom: 39px;
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.form-block__name-item {
+  margin-bottom: 16px;
 }
 
 .form-block__contacts-list {
@@ -23,6 +67,10 @@
   padding: 0;
   list-style-type: none;
   padding-bottom: 34px;
+}
+
+.form-block__contacts-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .form-block__rating-list {
@@ -34,10 +82,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-left: 36px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-left: 0;
   }
 }
 
@@ -54,10 +105,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 50% 50%;
+    padding-left: 84px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding-left: 0;
   }
 }
 
@@ -69,5 +123,18 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+}
+
+.form-block__wrapper .form-block__title::before,
+.form-block__wrapper .form-block__title::after {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.form-block__wrapper .form-block:first-of-type {
+  @media (min-width: @tablet-width) {
+    border-right: 1px solid #dbdbdb;
   }
 }
