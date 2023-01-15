@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона - фотографии</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/1933377-sedona-27/6/">
+</head>
+
+<body class="page__body">
+  <div class="page__wrapper">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Город Седона.">
+      </a>
+      <nav class="main-nav  main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--current">
+              <a class="main-nav__link">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro intro--inner">
+        <h1 class="visually-hidden">Фотографии из Седоны.</h1>
+        <img class="intro__banner" src="img/sedona-word.svg" width="229" height="39" alt="Sedona.">
+      </section>
+      <section class="photos">
+        <div class="photos__intro">
+          <h2 class="photos__intro-title page-title page-title--larger">Фото и видео</h2>
+          <p class="photos__intro-description page-description">Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <div class="photos__wrapper">
+          <h2 class="visually-hidden">Фото Седоны</h2>
+          <ul class="photos__list">
+            <li class="photos__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Фото просторов.">
+              </picture>
+              <div class="photos__text-wrapper">
+                <div class="photos__text">
+                <h3 class="photos__title">Неродные просторы</h3>
+                <p class="photos__author">Автор фото: Борис</p>
+              </div>
+                <div class="photos__likes">1350</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Фото растений.">
+              </picture>
+              <div class="photos__text-wrapper">
+              <div class="photos__text">
+                <h3 class="photos__title">Местная растительность</h3>
+                <p class="photos__author">Автор фото: Сергей</p></div>
+                <div class="photos__likes">143</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Фото дороги.">
+              </picture>
+              <div class="photos__text-wrapper">
+              <div class="photos__text">
+                <h3 class="photos__title">Дорога на север</h3>
+                <p class="photos__author">Автор фото: Петр</p></div>
+                <div class="photos__likes">96</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-4-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Фото скал.">
+              </picture>
+              <div class="photos__text-wrapper">
+              <div class="photos__text">
+                <h3 class="photos__title">Мост дьявола</h3>
+                <p class="photos__author">Автор фото: Антон</p></div>
+                <div class="photos__likes">254</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз
+        </p>
+        <img class="video__content" src="img/catalog/video.jpg" width="280" height="177">
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <p class="main-footer__text">#visitsedona</p>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="copyright__wrapper">
+            <span class="copyright__text">Разработано</span>
+            <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35">
+              <path
+                d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+            </svg>
+          </div>
+        </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
