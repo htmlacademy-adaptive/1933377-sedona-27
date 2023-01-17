@@ -26,6 +26,42 @@
   padding-bottom: 32px;
 }
 
+.video__wrapper {
+  position: relative;
+}
+
 .video__content {
   display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.video__button {
+  display: block;
+  border: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  z-index: 2;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ffffff;
+  opacity: 0.7;
+
+  &:hover {
+    color: @base-color;
+  }
+
+  &:active {
+    color: @base-color;
+    opacity: 0.5;
+  }
 }
