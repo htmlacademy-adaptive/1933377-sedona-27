@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - отзыв</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -83,16 +83,14 @@
               <ul class="form-block__contacts-list form-block__list">
                 <li class="form-block__contacts-item input-text">
                   <label class="input-text__label">Контактный телефон*:</label>
-                  <div class="input-text__input--with-icon">
-                    <input class="input-text__input" type="phone" placeholder="Введите телефон">
-                    <span class="input-text__icon input-text__icon--phone"></span>
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input input-text__input--with-icon" type="phone" placeholder="Введите телефон">
                   </div>
                 </li>
                 <li class="form-block__contacts-item input-text">
                   <label class="input-text__label">Электронная почта*:</label>
-                  <div class="input-text__input--with-icon">
-                    <input class="input-text__input" type="email" placeholder="Введите e-mail">
-                    <span class="input-text__icon input-text__icon--email"></span>
+                  <div class="input-text__wrapper">
+                    <input class="input-text__input input-text__input--with-icon" type="email" placeholder="Введите e-mail">
                   </div>
                 </li>
               </ul>
@@ -172,8 +170,8 @@
         </div>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__logo" width="27" height="35">
-            <use xlink:href="img/sprite-my.svg#academy-icon"></use>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor">
+            <use xlink:href="img/sprite.svg#academy-icon"></use>
           </svg>
         </a>
       </div>
@@ -181,18 +179,19 @@
     <div class="modal modal--closed">
       <div class="modal__window modal__window--failed">
         <div class="modal__message-wrapper">
-        <p class="modal__title">Что-то пошло не&nbsp;так!</p>
-        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      </div>
+          <p class="modal__title">Что-то пошло не&nbsp;так!</p>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
         <div class="modal__button-wrapper--none">
-        <button class="modal__button button">Ок</button>
-      </div>
+          <button class="modal__button button">Ок</button>
+        </div>
       </div>
 
       <div class="modal__window modal__window--success">
         <div class="modal__message-wrapper">
           <p class="modal__title">Ваш отзыв отправлен!</p>
-          <p class="modal__text">Спасибо за участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal__text">Спасибо за участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем
+            его на сайте.</p>
         </div>
         <div class="modal__button-wrapper">
           <button class="modal__button button" type="button">Закрыть окно</button>
@@ -202,5 +201,6 @@
 
   </div>
   <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

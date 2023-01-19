@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -74,6 +74,12 @@
               </div>
               <div class="advantages__photo-container">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp"
+                  srcset="img/advantages-nice-city-desktop.webp 1x, img/advantages-nice-city-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp"
+                  srcset="img/advantages-nice-city-tablet.webp 1x, img/advantages-nice-city-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                  srcset="img/advantages-nice-city.webp 1x, img/advantages-nice-city@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/advantages-nice-city-desktop.jpg 1x, img/advantages-nice-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -117,6 +123,12 @@
               </div>
               <div class="advantages__photo-container">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp"
+                    srcset="img/advantages-rocks-view-desktop.webp 1x, img/advantages-rocks-view-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp"
+                    srcset="img/advantages-rocks-view-tablet.webp 1x, img/advantages-rocks-view-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/advantages-rocks-view-tablet.webp 1x, img/advantages-rocks-view-tablet@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/advantages-rocks-view-desktop.jpg 1x, img/advantages-rocks-view-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -194,8 +206,8 @@
         </div>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__logo" width="27" height="35">
-            <use xlink:href="img/sprite-my.svg#academy-icon"></use>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor">
+            <use xlink:href="img/sprite.svg#academy-icon"></use>
           </svg>
         </a>
       </div>
