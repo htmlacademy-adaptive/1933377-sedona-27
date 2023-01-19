@@ -5,7 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding: 90px 15px 85px;
+  padding: 90px 15px 80px;
   position: relative;
 
   @media (min-resolution: 2dppx) {
@@ -68,5 +68,16 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog/catalog-intro-background-desktop@2x.jpg");
     }
+  }
+}
+
+.intro__banner {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 460px;
   }
 }

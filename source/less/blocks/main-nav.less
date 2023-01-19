@@ -115,7 +115,7 @@
   text-decoration: none;
   color: #ffffff;
   display: block;
-  padding: 17px 20px 12px;
+  padding: 17px 20px 11px;
   background-color: @base-color;
   font-weight: 700;
   font-size: 18px;
@@ -132,6 +132,15 @@
     background-color: #ffffff;
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
+
+    &:hover {
+      color: @base-color;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
   }
 }
 

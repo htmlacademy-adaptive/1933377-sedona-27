@@ -1,10 +1,20 @@
+.photos {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 62px;
+  }
+}
+
 .photos__intro {
-  padding-top: 30px;
-  padding-bottom: 34px;
+  padding-top: 38px;
+  padding-bottom: 20px;
 }
 
 .photos__intro-title {
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .photos__intro-description {
@@ -19,7 +29,6 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: #f2f2f2;
     max-width: 648px;
     margin: 0 auto;
   }
@@ -37,9 +46,9 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    background-color: #f2f2f2;
   }
 }
-
 
 .photos__item:first-child {
   @media (min-width: @tablet-width) {
@@ -59,9 +68,13 @@
   }
 }
 
-.photos__image {
+.photos__link {
   display: block;
-  padding: 24px 0 15px;
+}
+
+.photos__image {
+  display: inline-block;
+  padding: 24px 0 11px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -125,6 +138,7 @@
   font-size: 14px;
   line-height: 21px;
   padding-left: 37px;
+  padding-top: 17px;
   color: #000000;
 
   @media (min-width: @desktop-width) {
@@ -135,10 +149,10 @@
 .photos__likes::before {
   content: url("../img/like-icon.svg");
   position: absolute;
-  top: -4px;
+  top: 12px;
   left: 0;
 
   @media (min-width: @desktop-width) {
-    fill: #ffffff;
+    content: url("../img/like-icon-white.svg");
   }
 }
