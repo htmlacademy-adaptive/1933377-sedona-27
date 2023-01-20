@@ -66,15 +66,15 @@
               <ul class="form-block__name-list form-block__list">
                 <li class="form-block__name-item input-text">
                   <label class="input-text__label">Имя*:</label>
-                  <input class="input-text__input" type="text" placeholder="Пётр">
+                  <input class="input-text__input" type="text" placeholder="Введите имя" value="Пётр">
                 </li>
                 <li class="form-block__name-item input-text">
                   <label class="input-text__label">Фамилия*:</label>
-                  <input class="input-text__input" type="text" placeholder="Пустота">
+                  <input class="input-text__input" type="text" placeholder="Введите фамилию" value="Пустота">
                 </li>
                 <li class="form-block__name-item input-text">
                   <label class="input-text__label">Отчество:</label>
-                  <input class="input-text__input" type="text" placeholder="Викторович">
+                  <input class="input-text__input" type="text" placeholder="Введите отчество" value="Викторович">
                 </li>
               </ul>
             </fieldset>
@@ -83,13 +83,13 @@
               <ul class="form-block__contacts-list form-block__list">
                 <li class="form-block__contacts-item input-text">
                   <label class="input-text__label">Контактный телефон*:</label>
-                  <div class="input-text__wrapper">
+                  <div class="input-text__wrapper input-text__wrapper--phone">
                     <input class="input-text__input input-text__input--with-icon" type="phone" placeholder="Введите телефон">
                   </div>
                 </li>
                 <li class="form-block__contacts-item input-text">
                   <label class="input-text__label">Электронная почта*:</label>
-                  <div class="input-text__wrapper">
+                  <div class="input-text__wrapper input-text__wrapper--email">
                     <input class="input-text__input input-text__input--with-icon" type="email" placeholder="Введите e-mail">
                   </div>
                 </li>
@@ -137,7 +137,9 @@
           </fieldset>
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Опишите свои эмоции:</legend>
-            <textarea class="textarea__text" placeholder="Опишите подробно все свои восторги"></textarea>
+            <div class="form-block__message">
+              <textarea class="textarea__text" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
           </fieldset>
           <div class="review-form__block review-form__end">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>

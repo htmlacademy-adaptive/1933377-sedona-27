@@ -6,8 +6,12 @@
   border: 4px solid #f2f2f2;
   padding: 12px;
   max-width: 768px;
-  font-family: "PT Sans", sans-serif;
   resize: none;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
 }
 
 .textarea__text::placeholder {
@@ -17,4 +21,16 @@
   line-height: 26px;
   color: #000000;
   opacity: 0.3;
+}
+
+.textarea__text:hover {
+  background-color: #e5e5e5;
+  border: 4px solid #e5e5e5;
+}
+
+.textarea__text:focus,
+.textarea__text:active {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+  outline: transparent;
 }
