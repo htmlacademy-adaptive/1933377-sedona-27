@@ -1,5 +1,9 @@
 .main-map {
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main-map__map {
@@ -7,4 +11,28 @@
   display: block;
   border: none;
   max-height: 350px;
+}
+
+.main-map__wrapper {
+  position: relative;
+}
+
+.main-map__image {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 350px;
+}
+
+.main-map__wrapper::before {
+  content: url("../img/map-marker.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 27px;
+  height: 27px;
+  z-index: 2;
 }

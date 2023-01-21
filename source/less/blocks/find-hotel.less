@@ -4,6 +4,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 155px 57px;
+  }
 }
 
 .find-hotel__title {
@@ -14,6 +24,12 @@
   text-transform: uppercase;
   color: #000000;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 29px;
+  }
 }
 
 .find-hotel__text {
@@ -23,7 +39,10 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 41px;
+  }
 }
 
 .find-hotel__button {
