@@ -8,39 +8,50 @@
   margin-top: 4px;
   padding-top: 29px;
   padding-bottom: 20px;
+  width: 100%;
+  max-width: 960px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 8px;
+    width: auto;
+    padding-right: 87px;
+    padding-left: 87px;
   }
 
   &::before {
     content: "";
-    width: 1000%;
+    width: 100%;
     height: 1px;
     position: absolute;
     display: block;
-    right: -100%;
+    right: 0;
     top: 3px;
     background-color: #e5e5e5;
 
     @media (min-width: @tablet-width) {
-      right: calc(100% + 87px);
       top: 50%;
+      right: 100%;
+      width: calc(648px - 100% - 47px - 60px);
     }
   }
 
   &::after {
     @media (min-width: @tablet-width) {
       content: "";
-      width: 1000%;
+      width: calc(648px - 100% - 47px - 60px);
       height: 1px;
       position: absolute;
       display: block;
       background-color: #e5e5e5;
-      left: calc(100% + 87px);
+      left: 100%;
       top: 50%;
     }
   }
+}
+
+.form-block__wrapper .form-block__title {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form-block__list {
@@ -49,9 +60,8 @@
 
 .form-block__name-list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 19px;
   list-style-type: none;
-  padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
@@ -64,9 +74,8 @@
 
 .form-block__contacts-list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 30px;
   list-style-type: none;
-  padding-bottom: 30px;
 }
 
 .form-block__contacts-item:not(:last-child) {
@@ -75,9 +84,8 @@
 
 .form-block__rating-list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 20px;
   list-style-type: none;
-  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -98,9 +106,8 @@
 
 .form-block__attraction-list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px 20px;
   list-style-type: none;
-  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -117,6 +124,10 @@
 
 .form-block__attraction-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.form-block__message {
+  padding: 0 20px;
 }
 
 .form-block__wrapper {

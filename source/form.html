@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - отзыв</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -59,22 +63,22 @@
           <p class="review__intro-description page-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
             а также о посещенных вами достопримечательностях</p>
         </div>
-        <form class="review-form" action="" method="post">
+        <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form-block__wrapper">
             <fieldset class="review-form__block form-block form-block__name">
               <legend class="form-block__title">Представьтесь:</legend>
               <ul class="form-block__name-list form-block__list">
                 <li class="form-block__name-item input-text">
                   <label class="input-text__label">Имя*:</label>
-                  <input class="input-text__input" type="text" placeholder="Пётр">
+                  <input class="input-text__input" type="text" placeholder="Введите имя" value="Пётр">
                 </li>
                 <li class="form-block__name-item input-text">
                   <label class="input-text__label">Фамилия*:</label>
-                  <input class="input-text__input" type="text" placeholder="Пустота">
+                  <input class="input-text__input" type="text" placeholder="Введите фамилию" value="Пустота">
                 </li>
                 <li class="form-block__name-item input-text">
                   <label class="input-text__label">Отчество:</label>
-                  <input class="input-text__input" type="text" placeholder="Викторович">
+                  <input class="input-text__input" type="text" placeholder="Введите отчество" value="Викторович">
                 </li>
               </ul>
             </fieldset>
@@ -83,16 +87,14 @@
               <ul class="form-block__contacts-list form-block__list">
                 <li class="form-block__contacts-item input-text">
                   <label class="input-text__label">Контактный телефон*:</label>
-                  <div class="input-text__input--with-icon">
-                    <input class="input-text__input" type="phone" placeholder="Введите телефон">
-                    <span class="input-text__icon input-text__icon--phone"></span>
+                  <div class="input-text__wrapper input-text__wrapper--phone">
+                    <input class="input-text__input input-text__input--with-icon" type="tel" placeholder="Введите телефон">
                   </div>
                 </li>
                 <li class="form-block__contacts-item input-text">
                   <label class="input-text__label">Электронная почта*:</label>
-                  <div class="input-text__input--with-icon">
-                    <input class="input-text__input" type="email" placeholder="Введите e-mail">
-                    <span class="input-text__icon input-text__icon--email"></span>
+                  <div class="input-text__wrapper input-text__wrapper--email">
+                    <input class="input-text__input input-text__input--with-icon" type="email" placeholder="Введите e-mail">
                   </div>
                 </li>
               </ul>
@@ -139,7 +141,9 @@
           </fieldset>
           <fieldset class="review-form__block form-block">
             <legend class="form-block__title">Опишите свои эмоции:</legend>
-            <textarea class="textarea__text" placeholder="Опишите подробно все свои восторги"></textarea>
+            <div class="form-block__message">
+              <textarea class="textarea__text" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
           </fieldset>
           <div class="review-form__block review-form__end">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
@@ -172,8 +176,8 @@
         </div>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__logo" width="27" height="35">
-            <use xlink:href="img/sprite-my.svg#academy-icon"></use>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" aria-label="Ссылка на страницу HTML Academy">
+            <use xlink:href="img/sprite.svg#academy-icon" />
           </svg>
         </a>
       </div>
@@ -181,18 +185,19 @@
     <div class="modal modal--closed">
       <div class="modal__window modal__window--failed">
         <div class="modal__message-wrapper">
-        <p class="modal__title">Что-то пошло не&nbsp;так!</p>
-        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      </div>
+          <p class="modal__title">Что-то пошло не&nbsp;так!</p>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
         <div class="modal__button-wrapper--none">
-        <button class="modal__button button">Ок</button>
-      </div>
+          <button class="modal__button button">Ок</button>
+        </div>
       </div>
 
       <div class="modal__window modal__window--success">
         <div class="modal__message-wrapper">
           <p class="modal__title">Ваш отзыв отправлен!</p>
-          <p class="modal__text">Спасибо за участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+          <p class="modal__text">Спасибо за участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем
+            его на сайте.</p>
         </div>
         <div class="modal__button-wrapper">
           <button class="modal__button button" type="button">Закрыть окно</button>
@@ -202,5 +207,6 @@
 
   </div>
   <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>

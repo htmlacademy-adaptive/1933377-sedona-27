@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - фотографии</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -65,6 +69,9 @@
             <li class="photos__item">
               <a href="#" class="photos__link">
               <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
                 <img class="photos__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Фото просторов.">
@@ -81,6 +88,9 @@
             <li class="photos__item">
               <a href="#" class="photos__link">
               <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
                 <img class="photos__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Фото растений.">
@@ -96,6 +106,9 @@
             <li class="photos__item">
               <a href="#" class="photos__link">
               <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
                 <img class="photos__image" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Фото дороги.">
@@ -111,6 +124,9 @@
             <li class="photos__item">
               <a href="#" class="photos__link">
               <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-4-desktop.webp 1x, img/catalog/photo-4-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-4-mobile.webp 1x, img/catalog/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
                 <img class="photos__image" src="img/catalog/photo-4-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Фото скал.">
@@ -132,13 +148,16 @@
         </p>
         <div class="video__wrapper">
           <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/catalog/video.jpg 1x, img/catalog/video@2x.jpg 2x">
             <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
             <img class="video__content" src="img/catalog/video.jpg" width="280" height="177" srcset="img/catalog/video@2x.jpg 2x" alt="Смотреть видео.">
           </picture>
         <button class="video__button" type="button">
-          <svg width="48" height="54">
-            <use xlink:href="img/sprite-my.svg#video-icon"></use>
+          <svg width="48" height="54" fill="currentColor" aria-label="Посмотреть видео.">
+            <use xlink:href="img/sprite.svg#video-icon"></use>
           </svg>
         </button>
         </div>
@@ -168,11 +187,10 @@
         </div>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
-          <svg class="copyright__logo" width="27" height="35">
-            <use xlink:href="img/sprite-my.svg#academy-icon"></use>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" aria-label="Ссылка на страницу HTML Academy.">
+            <use xlink:href="img/sprite.svg#academy-icon" />
           </svg>
         </a>
-        </div>
       </div>
     </footer>
   </div>
