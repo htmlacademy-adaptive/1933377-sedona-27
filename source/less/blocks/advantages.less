@@ -29,6 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -181,7 +182,15 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
-  padding: 0 15px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: none;
+    }
+
+    padding: 0 15px;
+  }
 }
 
 .advantages__item--dark .advantages__title,

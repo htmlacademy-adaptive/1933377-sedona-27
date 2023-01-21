@@ -36,3 +36,19 @@
 .checkbox__input:checked + .checkbox__label::after {
   display: block;
 }
+
+.checkbox__input:hover + .checkbox__label::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  background-color: #e5e5e5;
+}
+
+.checkbox__input:active + .checkbox__label::before {
+  background-color: #d5d5d5;
+}
+
+.checkbox__input:active + .checkbox__label::after {
+  opacity: 0.3;
+}
