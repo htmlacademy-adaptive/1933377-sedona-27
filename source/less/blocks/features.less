@@ -33,6 +33,7 @@
 
   @media (min-width: @desktop-width) {
     width: 400px;
+    padding: 169px 54px 68px;
   }
 }
 
@@ -53,6 +54,10 @@
     width: 80px;
     height: 80px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 64px;
+  }
 }
 
 .features__text-container--house::before {
@@ -61,6 +66,10 @@
   @media (min-width: @tablet-width) {
     background-size: 77px 72px;
   }
+
+  @media (min-width: @desktop-width) {
+    background-size: 79px 72px;
+  }
 }
 
 .features__text-container--food::before {
@@ -68,6 +77,10 @@
 
   @media (min-width: @tablet-width) {
     background-size: 80px 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 73px 69px;
   }
 }
 
@@ -78,11 +91,20 @@
     background-size: 67px 75px;
     top: 62px;
   }
+
+  @media (min-width: @desktop-width) {
+    background-size: 76px 75px;
+    top: 65px;
+  }
 }
 
 .features__item:last-child .features__text-container {
   @media (min-width: @tablet-width) {
     padding-top: 154px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 171px;
   }
 }
 
@@ -121,9 +143,17 @@
 .features__item:last-child .features__description {
   @media (max-width: @mobile-width-only) {
     padding-bottom: 46px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: @tablet-width) {
     max-width: 170px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 220px;
   }
 }

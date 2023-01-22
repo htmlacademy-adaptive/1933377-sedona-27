@@ -1,12 +1,41 @@
 .review__intro {
   padding-top: 37px;
   padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 40px 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 113px 40px 26px;
+  }
 }
 
 .review__intro-title {
   padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 31px;
+  }
 }
 
 .review__intro-description {
   padding-bottom: 16px;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
+
