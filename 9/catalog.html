@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона - фотографии</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/1933377-sedona-27/9/">
+</head>
+
+<body class="page__body">
+  <div class="page__wrapper">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Город Седона.">
+      </a>
+      <nav class="main-nav  main-nav--closed">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--current">
+              <a class="main-nav__link">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro intro--inner">
+        <h1 class="visually-hidden">Фотографии из Седоны.</h1>
+        <img class="intro__banner" src="img/sedona-word.svg" width="229" height="39" alt="Sedona.">
+      </section>
+      <section class="photos">
+        <div class="photos__intro">
+          <h2 class="photos__intro-title page-title page-title--larger">Фото и видео</h2>
+          <p class="photos__intro-description page-description">Не можете решиться на путешествие из‑за&nbsp;курса? <br>Фотографии помогут вам забыть&nbsp;о&nbsp;политике и экономике.</p>
+        </div>
+        <div class="photos__wrapper">
+          <h2 class="visually-hidden">Фото Седоны</h2>
+          <ul class="photos__list">
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-1-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="Фото просторов.">
+              </picture>
+            </a>
+              <div class="photos__text-wrapper">
+                <div class="photos__text">
+                <h3 class="photos__title">Неродные просторы</h3>
+                <p class="photos__author">Автор фото: Борис</p>
+              </div>
+                <div class="photos__likes">1350</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-2-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Фото растений.">
+              </picture>
+            </a>
+              <div class="photos__text-wrapper">
+              <div class="photos__text">
+                <h3 class="photos__title">Местная растительность</h3>
+                <p class="photos__author">Автор фото: Сергей</p></div>
+                <div class="photos__likes">143</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-3-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Фото дороги.">
+              </picture>
+            </a>
+              <div class="photos__text-wrapper">
+              <div class="photos__text">
+                <h3 class="photos__title">Дорога на север</h3>
+                <p class="photos__author">Автор фото: Петр</p></div>
+                <div class="photos__likes">96</div>
+              </div>
+            </li>
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+              <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-4-desktop.webp 1x, img/catalog/photo-4-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/photo-4-mobile.webp 1x, img/catalog/photo-4-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+                <img class="photos__image" src="img/catalog/photo-4-mobile.jpg" width="280" height="280" srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Фото скал.">
+              </picture>
+            </a>
+              <div class="photos__text-wrapper">
+              <div class="photos__text">
+                <h3 class="photos__title">Мост дьявола</h3>
+                <p class="photos__author">Автор фото: Антон</p></div>
+                <div class="photos__likes">254</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__text">Смотрите видеопрезентацию и скорее&nbsp;за билетами, пока они<br> не подорожали&nbsp;в очередной раз
+        </p>
+        <div class="video__wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+            <source type="image/webp" srcset="img/catalog/video.jpg 1x, img/catalog/video@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+            <img class="video__content" src="img/catalog/video.jpg" width="280" height="177" srcset="img/catalog/video@2x.jpg 2x" alt="Смотреть видео.">
+          </picture>
+        <button class="video__button" type="button">
+          <svg width="48" height="54" fill="currentColor" aria-label="Посмотреть видео.">
+            <use xlink:href="img/sprite.svg#video-icon"></use>
+          </svg>
+        </button>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper main-footer__wrapper--inner">
+        <p class="main-footer__text">#visitsedona</p>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__text">Разработано</span>
+          <svg class="copyright__logo" width="27" height="35" fill="currentColor" aria-label="Ссылка на страницу HTML Academy.">
+            <use xlink:href="img/sprite.svg#academy-icon" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
