@@ -14,8 +14,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 76px;
+    padding: 36px 76px 36px 60px;
     margin-bottom: 0s;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 136px 36px 119px;
+  }
+}
+
+.main-footer__wrapper--inner {
+  @media (min-width: @tablet-width) {
+    padding: 36px 60px 36px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 120px 36px 120px;
   }
 }
 
@@ -29,8 +43,13 @@
   margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 30px;
+    margin-right: 44px;
     margin-bottom: 0;
   }
 }
 
+.main-footer__wrapper--inner .main-footer__text {
+  @media (min-width: @tablet-width) {
+    margin-right: 27px;
+  }
+}
