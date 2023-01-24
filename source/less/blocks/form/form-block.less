@@ -32,20 +32,28 @@
     @media (min-width: @tablet-width) {
       top: 50%;
       right: 100%;
-      width: calc(648px - 100% - 47px - 60px);
+      width: calc(648px - 100% - 52px - 60px);
+    }
+
+    @media (min-width: @desktop-width) {
+      width: calc(960px - 100% - 132px - 120px);
     }
   }
 
   &::after {
     @media (min-width: @tablet-width) {
       content: "";
-      width: calc(648px - 100% - 47px - 60px);
+      width: calc(648px - 100% - 52px - 60px);
       height: 1px;
       position: absolute;
       display: block;
       background-color: #e5e5e5;
       left: 100%;
       top: 50%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: calc(960px - 100% - 132px - 120px);
     }
   }
 }
@@ -101,7 +109,7 @@
     margin-left: -27px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin-left: 7px;
   }
 }
@@ -164,13 +172,19 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
-    padding-left: 44px;
-    padding-right: 44px;
-    padding-top: 30px;
+    justify-content: space-evenly;
+    padding-top: 33px;
     gap: 64px;
-    margin-bottom: 31px;
+    margin-bottom: 65px;
+  }
+}
+
+.form-block__attraction-item {
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    padding: 0;
   }
 }
 
